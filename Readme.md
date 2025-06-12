@@ -1,6 +1,6 @@
 # iPhone Video Downloader
 
-A minimal macOS app to quickly download videos from a physically connected iPhone.
+Vibe coded minimal macOS app to quickly download videos from a physically connected iPhone.
 
 ---
 
