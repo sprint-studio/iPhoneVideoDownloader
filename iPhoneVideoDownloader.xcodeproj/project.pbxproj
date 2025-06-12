@@ -10,6 +10,7 @@
 		2A24A8EC2DFABD17000F6979 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A24A8EB2DFABD17000F6979 /* info.plist */; };
 		2A24A8ED2DFAC425000F6979 /* ImageCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A24A8E52DFAB4FB000F6979 /* ImageCaptureCore.framework */; };
 		2A24A8EE2DFAC425000F6979 /* ImageCaptureCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A24A8E52DFAB4FB000F6979 /* ImageCaptureCore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2A24A8FA2DFB2BAD000F6979 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 2A24A8F92DFB2BA3000F6979 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		2A24A8E52DFAB4FB000F6979 /* ImageCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCaptureCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/ImageCaptureCore.framework; sourceTree = DEVELOPER_DIR; };
 		2A24A8EB2DFABD17000F6979 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = info.plist; sourceTree = "<group>"; };
+		2A24A8F92DFB2BA3000F6979 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		2A3BD0A82DFA143B00131A30 /* iPhoneVideoDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneVideoDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3BD0B62DFA143C00131A30 /* iPhoneVideoDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPhoneVideoDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3BD0C02DFA143D00131A30 /* iPhoneVideoDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPhoneVideoDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 		2A3BD09F2DFA143B00131A30 = {
 			isa = PBXGroup;
 			children = (
+				2A24A8F92DFB2BA3000F6979 /* Readme.md */,
 				2A24A8EB2DFABD17000F6979 /* info.plist */,
 				2A3BD0AA2DFA143B00131A30 /* iPhoneVideoDownloader */,
 				2A24A8E42DFAB4FB000F6979 /* Frameworks */,
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A24A8EC2DFABD17000F6979 /* info.plist in Resources */,
+				2A24A8FA2DFB2BAD000F6979 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
