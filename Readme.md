@@ -1,10 +1,3 @@
-//
-//  Readme.md
-//  iPhoneVideoDownloader
-//
-//  Created by Davide Sicignani on 12/06/25.
-//
-
 # iPhone Video Downloader
 
 A minimal macOS app to quickly download videos from a physically connected iPhone.
