@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2A24A8EC2DFABD17000F6979 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A24A8EB2DFABD17000F6979 /* info.plist */; };
+		2A24A8ED2DFAC425000F6979 /* ImageCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A24A8E52DFAB4FB000F6979 /* ImageCaptureCore.framework */; };
+		2A24A8EE2DFAC425000F6979 /* ImageCaptureCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A24A8E52DFAB4FB000F6979 /* ImageCaptureCore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2A3BD0B72DFA143C00131A30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,7 +29,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2A24A8EF2DFAC425000F6979 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A24A8EE2DFAC425000F6979 /* ImageCaptureCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A24A8E52DFAB4FB000F6979 /* ImageCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCaptureCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/ImageCaptureCore.framework; sourceTree = DEVELOPER_DIR; };
+		2A24A8EB2DFABD17000F6979 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = info.plist; sourceTree = "<group>"; };
 		2A3BD0A82DFA143B00131A30 /* iPhoneVideoDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneVideoDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3BD0B62DFA143C00131A30 /* iPhoneVideoDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPhoneVideoDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3BD0C02DFA143D00131A30 /* iPhoneVideoDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPhoneVideoDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,16 +57,6 @@
 			path = iPhoneVideoDownloader;
 			sourceTree = "<group>";
 		};
-		2A3BD0B92DFA143C00131A30 /* iPhoneVideoDownloaderTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = iPhoneVideoDownloaderTests;
-			sourceTree = "<group>";
-		};
-		2A3BD0C32DFA143D00131A30 /* iPhoneVideoDownloaderUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = iPhoneVideoDownloaderUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A24A8ED2DFAC425000F6979 /* ImageCaptureCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A24A8E42DFAB4FB000F6979 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A24A8E52DFAB4FB000F6979 /* ImageCaptureCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2A3BD09F2DFA143B00131A30 = {
 			isa = PBXGroup;
 			children = (
+				2A24A8EB2DFABD17000F6979 /* info.plist */,
 				2A3BD0AA2DFA143B00131A30 /* iPhoneVideoDownloader */,
-				2A3BD0B92DFA143C00131A30 /* iPhoneVideoDownloaderTests */,
-				2A3BD0C32DFA143D00131A30 /* iPhoneVideoDownloaderUITests */,
+				2A24A8E42DFAB4FB000F6979 /* Frameworks */,
 				2A3BD0A92DFA143B00131A30 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +123,7 @@
 				2A3BD0A42DFA143B00131A30 /* Sources */,
 				2A3BD0A52DFA143B00131A30 /* Frameworks */,
 				2A3BD0A62DFA143B00131A30 /* Resources */,
+				2A24A8EF2DFAC425000F6979 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,9 +152,6 @@
 			dependencies = (
 				2A3BD0B82DFA143C00131A30 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				2A3BD0B92DFA143C00131A30 /* iPhoneVideoDownloaderTests */,
-			);
 			name = iPhoneVideoDownloaderTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +171,6 @@
 			);
 			dependencies = (
 				2A3BD0C22DFA143D00131A30 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				2A3BD0C32DFA143D00131A30 /* iPhoneVideoDownloaderUITests */,
 			);
 			name = iPhoneVideoDownloaderUITests;
 			packageProductDependencies = (
@@ -212,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A24A8EC2DFABD17000F6979 /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,10 +407,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = iPhoneVideoDownloader/iPhoneVideoDownloader.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R2PMQU6T8K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -416,10 +435,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Debug;
@@ -429,10 +448,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = iPhoneVideoDownloader/iPhoneVideoDownloader.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R2PMQU6T8K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -455,10 +476,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
